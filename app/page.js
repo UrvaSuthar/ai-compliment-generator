@@ -18,7 +18,7 @@ const ComplimentGenerator = () => {
     if (loading) return
     setLoading(true)
     try {
-      const { data } = await axios.post("http://localhost:5001/generate", { name: name.trim() }, { timeout: 5000 })
+      const { data } = await axios.post("https://ai-compliment-api.onrender.com/generate", { name: name.trim() }, { timeout: 5000 })
       setCompliment(data.compliment)
      
     } catch (error) {
