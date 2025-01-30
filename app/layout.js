@@ -14,7 +14,38 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Just compliment it.",
-  description: "Give your firend a nice compliment",
+  description: "Give your friend a nice compliment",
+  keywords: "compliment, positive feedback, kindness, AI compliments, uplifting messages",
+  author: "Urva Suthar",
+  openGraph: {
+    title: "Just compliment it.",
+    description: "Give your friend a nice compliment with our AI-powered generator.",
+    url: "https://ai-compliment-generator-fawn.vercel.app",
+    type: "website",
+    site_name: "AI Compliment Generator",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Just compliment it.",
+    description: "Give your friend a nice compliment with our AI-powered generator.",
+    image: "https://yourwebsite.com/image.jpg", // Replace with your actual image URL
+  },
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "AI Compliment Generator",
+    url: "https://ai-compliment-generator-fawn.vercel.app",
+    description: "An AI-powered tool to generate compliments for your friends.",
+    author: {
+      "@type": "Person",
+      name: "Urva Suthar",
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://ai-compliment-generator-fawn.vercel.app/search?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
